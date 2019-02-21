@@ -7,7 +7,6 @@ class App {
 	protected $params = [];
 
 	public function __construct(){
-		echo "radi<br />";
 		echo "parsam url: <br />";
 		$this->parseUrl();
 
@@ -15,6 +14,7 @@ class App {
 
 	public function parseUrl(){
 		if(isset($_GET['url'])){
+			var_dump( $_GET['url']);die();
 			echo $_GET['url'];
 		}
 	}
